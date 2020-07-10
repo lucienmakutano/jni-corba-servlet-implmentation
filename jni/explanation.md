@@ -12,9 +12,7 @@ will take to parameters `num1` and `num2` and then return the mod of them
 
 we compile the java class
 
-`bash 
-    javac -h . ModulusCalculation.java
-`
+`javac -h . ModulusCalculation.java`
 
 ## C implementation
 
@@ -22,9 +20,8 @@ we compile the java class
 
 it has the implemenation in c
 
-`C
-    JNIEXPORT jint JNICALL Java_ModulusCalculation_calculateModulus 
-    (JNIEnv *env, jobject thisObj, jint num1, jint num2) {
+`
+    JNIEXPORT jint JNICALL Java_ModulusCalculation_calculateModulus (JNIEnv *env, jobject thisObj, jint num1, jint num2) {
         return (jint) num1 % num2;
     }
 `
@@ -33,15 +30,13 @@ it has the implemenation in c
 
 we create a modulus.dll file
 
-`bash
-    gcc -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" -shared -o modulus.dll calculate_modulus.c
+`
+    x86_64-6w4-min32-gcc -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" -shared -o modulus.dll calculate_modulus.c
 `
 
 ## run the program
 
-`bash
-    java ModulusCalculation
-`
+`java ModulusCalculation`
 
 # Authors
 @KennethTL @Lusiji254 @tadomikikuto-bit
