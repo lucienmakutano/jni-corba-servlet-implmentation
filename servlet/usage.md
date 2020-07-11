@@ -1,7 +1,7 @@
 # servlet implemenation
 
 
-url to access the site `/servlet-example/` for the home page
+url to access the site `/servlet-example/index.html` for the home page
 and `/servlet-example/hello` to see our Ids and names
 
 # Authors
