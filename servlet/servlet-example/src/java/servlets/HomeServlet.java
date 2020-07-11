@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Lyvia
+ * @author makut
  */
-public class MyServlet extends HttpServlet {
+public class HomeServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,11 +35,15 @@ public class MyServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>ServeletMyServelet</title>");            
+            out.println("<title>Servlet HomeServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet MyServlet at " + request.getContextPath() + "</h1>");
-            out.println("<div>120190, 114970, 118300</div>");
+            out.println("<h1>Servlet HomeServlet at " + request.getContextPath() + "</h1>");
+            out.println("<div>");
+            out.println("<p><b>Lucien makutano</b>: 114970</p>");
+            out.println("<p><b>Lusiji Lyvia</b>: 120190</p>");
+            out.println("<p><b>Kenneth Temba</b>: 118300</p>");
+            out.println("</div>");
             out.println("</body>");
             out.println("</html>");
         }
